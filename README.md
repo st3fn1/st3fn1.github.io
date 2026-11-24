@@ -1,4 +1,4 @@
-# st3fn1 — IT & Homelab Portfolio
+# st3fn1's Portfolio
 
 Live at https://st3fn1.github.io
 
