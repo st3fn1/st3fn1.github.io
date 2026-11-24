@@ -1,42 +1,215 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home • stfn.lol</title>
-  <meta name="description" content="Static template for GitHub Pages." />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>st3fn1 · IT &amp; Homelab Portfolio</title>
+  <meta name="description" content="st3fn1: hands-on IT technician. Hardware repair, sysadmin, networking, Proxmox homelab and cybersecurity.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖥️</text></svg>">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="container nav">
-      <a class="brand" href="index.html">stfn.lol</a>
-      <ul class="nav-links">
-        <li><a href="about.html">About</a></li>
-        <li><a href="homelab.html">Homelab</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="labs.html">Labs</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="logo"><span class="prompt">~$</span> st3fn1</a>
+    <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav class="links">
+      <a href="#about">About</a>
+      <a href="#homelab">Homelab</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-btn" aria-label="Toggle dark mode">◐</button>
     </nav>
-  </header>
-  <main class="container">
-
-<section class="hero">
-  <h1>Welcome</h1>
-  <p class="muted">This is a simple, multi‑page template for GitHub Pages. Replace placeholders with your content.</p>
-  <div class="grid two">
-    <a class="card link" href="homelab.html"><h3>Homelab</h3><p>Template page for network, services, notes.</p></a>
-    <a class="card link" href="projects.html"><h3>Projects</h3><p>Template cards for builds and write‑ups.</p></a>
   </div>
-</section>
+</header>
 
-  </main>
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 • Static template • GitHub Pages ready</p>
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero wrap">
+    <p class="eyebrow mono">// field tech · sysadmin · networking · security</p>
+    <h1>Hands-on IT. <span class="accent">From the screwdriver to the hypervisor.</span></h1>
+    <p class="lead">
+      I'm <strong>st3fn1</strong>, a <strong>CompTIA A+ certified</strong> technician who repairs and upgrades hardware,
+      administers Linux, Windows and macOS systems, and runs my own homelab with <strong>Proxmox</strong>, firewalls,
+      VLANs and VPNs. Background includes a <strong>cybersecurity internship</strong> and professional computer refurbishing.
+    </p>
+    <div class="cta">
+      <a class="btn primary" href="#homelab">Tour my homelab</a>
+      <a class="btn" href="#skills">See my skills</a>
+      <a class="btn ghost" href="https://github.com/st3fn1" target="_blank" rel="noopener">GitHub ↗</a>
     </div>
-  </footer>
+    <ul class="stats">
+      <li><b>A+</b><span>CompTIA certified</span></li>
+      <li><b>3 OSes</b><span>Linux · Windows · macOS</span></li>
+      <li><b>Proxmox</b><span>virtualization &amp; automation</span></li>
+      <li><b>Security</b><span>cybersecurity internship</span></li>
+    </ul>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="wrap section">
+    <h2><span class="num mono">01.</span> About me</h2>
+    <div class="about-grid">
+      <div>
+        <p>I like work I can put my hands on. I've opened up laptops and desktops to replace screens, keyboards,
+        RAM, storage and other internal parts, and I've installed CPUs and upgraded servers and mini PCs.</p>
+        <p>I'm just as comfortable on the software side. I set up firewalls, split networks into VLANs, connect VPNs,
+        configure Wi-Fi, and run virtual machines on Proxmox and other hypervisors. My homelab is where I practise
+        all of this, and where I've started automating the repetitive parts.</p>
+        <p>I'm looking for a role in <strong>field technician, desktop support, or systems administration</strong> work
+        that mixes hands-on hardware and system management.</p>
+      </div>
+      <aside class="card">
+        <h3>Quick facts</h3>
+        <ul class="facts">
+          <li><span>Certification</span> CompTIA A+</li>
+          <li><span>Experience</span> Cybersecurity internship · Computer refurbishing</li>
+          <li><span>Platforms</span> Linux (incl. Kali), Windows, macOS</li>
+          <li><span>Looking for</span> Field tech · Desktop support · Sysadmin</li>
+          <li><span>Status</span> <span class="pill ok">Open to work</span></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ HOMELAB ============ -->
+  <section id="homelab" class="wrap section">
+    <h2><span class="num mono">02.</span> The homelab</h2>
+    <p class="sub">My own network and servers, where I build, break and fix the same kinds of systems businesses run.</p>
+
+    <figure class="card diagram">
+      <svg viewBox="0 0 860 420" role="img" aria-label="Homelab network layout: internet to firewall to switch, then servers, Wi-Fi and segmented VLANs">
+        <g class="link">
+          <line x1="430" y1="62" x2="430" y2="110"/>
+          <line x1="430" y1="160" x2="430" y2="200"/>
+          <line x1="430" y1="250" x2="140" y2="300"/>
+          <line x1="430" y1="250" x2="330" y2="300"/>
+          <line x1="430" y1="250" x2="530" y2="300"/>
+          <line x1="430" y1="250" x2="720" y2="300"/>
+          <line x1="560" y1="135" x2="690" y2="135" class="dash"/>
+        </g>
+        <g class="node wan"><rect x="350" y="20" width="160" height="42" rx="8"/><text x="430" y="46">Internet</text></g>
+        <g class="node fw"><rect x="300" y="110" width="260" height="50" rx="8"/><text x="430" y="132">Firewall / Router</text><text x="430" y="150" class="small">rules · NAT · VPN endpoint</text></g>
+        <g class="node wan"><rect x="690" y="113" width="140" height="44" rx="8"/><text x="760" y="140" class="small">Remote VPN client</text></g>
+        <g class="node sw"><rect x="310" y="200" width="240" height="50" rx="8"/><text x="430" y="222">Managed Switch</text><text x="430" y="240" class="small">VLAN-tagged trunk ports</text></g>
+        <g class="node pve"><rect x="40" y="300" width="200" height="80" rx="8"/><text x="140" y="324">Proxmox Host</text><text x="140" y="344" class="small">VMs + containers</text><text x="140" y="362" class="small">automated tasks</text></g>
+        <g class="node"><rect x="260" y="300" width="160" height="80" rx="8"/><text x="340" y="324">Mini PCs</text><text x="340" y="344" class="small">Linux / Windows</text><text x="340" y="362" class="small">test machines</text></g>
+        <g class="node"><rect x="440" y="300" width="160" height="80" rx="8"/><text x="520" y="324">Security VLAN</text><text x="520" y="344" class="small">Kali Linux</text><text x="520" y="362" class="small">isolated testing</text></g>
+        <g class="node"><rect x="620" y="300" width="200" height="80" rx="8"/><text x="720" y="324">Wi-Fi Access</text><text x="720" y="344" class="small">separate SSIDs</text><text x="720" y="362" class="small">mapped to VLANs</text></g>
+        <text x="430" y="408" class="small">Traffic between VLANs is filtered at the firewall</text>
+      </svg>
+      <figcaption>Simplified layout of my lab. Specific addresses and device names are left out on purpose.</figcaption>
+    </figure>
+
+    <h3 class="h3">Self-hosted services</h3>
+    <p class="sub">Every service runs in a Docker container, managed through Portainer for quick deployment and easy maintenance.</p>
+    <div class="services">
+      <div class="svc"><b>Portainer</b><span>Docker container management</span></div>
+      <div class="svc"><b>AdGuard Home</b><span>Network-wide DNS filtering</span></div>
+      <div class="svc"><b>NetAlertX</b><span>Real-time device monitoring &amp; change alerts</span></div>
+      <div class="svc"><b>Glances</b><span>CPU, RAM &amp; system health monitoring</span></div>
+      <div class="svc"><b>Heimdall</b><span>Dashboard for all services in one view</span></div>
+      <div class="svc"><b>FileBrowser</b><span>Web-based file management</span></div>
+      <div class="svc"><b>KeeWeb</b><span>Self-hosted password manager</span></div>
+      <div class="svc"><b>Watchtower</b><span>Automatic container updates</span></div>
+      <div class="svc"><b>Speedtest Tracker</b><span>Scheduled logging of connection performance</span></div>
+    </div>
+
+    <h3 class="h3">What I do in the lab</h3>
+    <div class="grid-2">
+      <div class="card lesson"><h4>🖥️ Virtualization with Proxmox</h4><p>Create and manage virtual machines and containers on Proxmox, and work with other hypervisors. I've automated routine Proxmox tasks so they don't have to be done by hand.</p></div>
+      <div class="card lesson"><h4>🔐 Firewall &amp; network segmentation</h4><p>Configure firewall rules and separate the network into VLANs, so devices only reach what they need to.</p></div>
+      <div class="card lesson"><h4>🌐 VPN &amp; Wi-Fi</h4><p>Connect and configure VPNs for secure remote access, and set up Wi-Fi networks mapped to the right VLANs.</p></div>
+      <div class="card lesson"><h4>🛡️ Security testing</h4><p>Use Kali Linux in an isolated environment to learn how systems are attacked and how to defend them.</p></div>
+      <div class="card lesson"><h4>🔧 Hardware builds &amp; upgrades</h4><p>Install CPUs and RAM, upgrade and fix storage, and keep servers and mini PCs running.</p></div>
+      <div class="card lesson"><h4>🚫 DNS filtering</h4><p>Run AdGuard Home for network-wide DNS filtering, and maintain my own public blocklist. See <a href="#projects">Projects</a>.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="wrap section">
+    <h2><span class="num mono">03.</span> Projects</h2>
+    <p class="sub">Public work on GitHub. More coming soon.</p>
+    <div class="grid-2">
+      <article class="card project">
+        <p class="tag mono">dns · networking</p>
+        <h4>SoundCloud DNS blocklist</h4>
+        <p>A DNS blocklist for SoundCloud domains, for use with network-wide DNS filters, to block the service
+        across every device on a network without touching each device.</p>
+        <ul class="stack mono"><li>DNS</li><li>Network filtering</li><li>Blocklists</li></ul>
+        <a href="https://github.com/st3fn1/soundcloud-blocklist" target="_blank" rel="noopener">View on GitHub ↗</a>
+      </article>
+      <article class="card project">
+        <p class="tag mono">automation · virtualization</p>
+        <h4>Proxmox automation</h4>
+        <p>Automating routine tasks in my Proxmox homelab to cut out repetitive manual work.</p>
+        <ul class="stack mono"><li>Proxmox</li><li>Linux</li><li>Automation</li></ul>
+        <a href="#homelab">See the homelab ↑</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="wrap section">
+    <h2><span class="num mono">04.</span> Skills</h2>
+    <div class="grid-3 skills">
+      <div class="card"><h4>Hardware</h4><ul class="stack mono"><li>CPU install</li><li>RAM upgrades</li><li>Storage repair &amp; upgrades</li><li>Laptop screens</li><li>Keyboards</li><li>Internal components</li><li>Servers</li><li>Mini PCs</li></ul></div>
+      <div class="card"><h4>Networking</h4><ul class="stack mono"><li>Firewalls</li><li>VLANs</li><li>VPN</li><li>Wi-Fi setup</li><li>Switches</li><li>DNS filtering</li></ul></div>
+      <div class="card"><h4>Systems</h4><ul class="stack mono"><li>Linux</li><li>Kali Linux</li><li>Windows</li><li>macOS</li><li>Proxmox</li><li>Other hypervisors</li></ul></div>
+      <div class="card"><h4>Security</h4><ul class="stack mono"><li>Cybersecurity fundamentals</li><li>Network segmentation</li><li>Kali tooling</li></ul></div>
+      <div class="card"><h4>Automation &amp; containers</h4><ul class="stack mono"><li>Proxmox automation</li><li>Docker</li><li>Portainer</li><li>Watchtower</li><li>Git / GitHub</li></ul></div>
+      <div class="card"><h4>Field work</h4><ul class="stack mono"><li>Installing systems</li><li>Diagnosing &amp; repair</li><li>Refurbishing</li><li>Connecting equipment</li></ul></div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience" class="wrap section">
+    <h2><span class="num mono">05.</span> Experience</h2>
+    <ol class="timeline">
+      <li>
+        <p class="when mono">Internship</p>
+        <h4>Cybersecurity Intern</h4>
+        <p>Hands-on exposure to security tools, practices and how organisations protect their systems.</p>
+      </li>
+      <li>
+        <p class="when mono">Hardware</p>
+        <h4>Computer Refurbishing Technician</h4>
+        <p>Diagnosed and refurbished computers: replaced screens, keyboards and other internal hardware to bring machines back to working condition.</p>
+      </li>
+      <li>
+        <p class="when mono">Ongoing</p>
+        <h4>Homelab, self-directed</h4>
+        <p>Built and run a home network and Proxmox environment with a firewall, VLANs, VPN, Wi-Fi and automation.</p>
+      </li>
+    </ol>
+    <h3 class="h3">Certifications</h3>
+    <ul class="certs">
+      <li class="card"><b>CompTIA A+</b><span>Certified</span></li>
+    </ul>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="wrap section contact">
+    <h2><span class="num mono">06.</span> Let's talk</h2>
+    <p class="sub">I'm actively looking for my next role. Reach out on GitHub and I'll share my full résumé directly.</p>
+    <div class="cta">
+      <a class="btn primary" href="https://github.com/st3fn1" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap footer mono">
+  <p>© <span id="year"></span> st3fn1 · Hosted on GitHub Pages</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
