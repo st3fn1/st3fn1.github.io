@@ -1,23 +1,9 @@
+# stfn.lol
 
-# stfn.lol — GitHub Pages Template
+Portfolio site for Stephen Esterle: IT & cybersecurity. Plain HTML/CSS on GitHub Pages, no build step.
 
-Simple, multi‑page static site. No build step, no external dependencies.
+- `index.html`: the whole site (About, Certifications, Experience, Homelab, Skills, Contact)
+- `assets/css/style.css`: styles
+- Old page URLs (`about.html`, `homelab.html`, etc.) redirect to the matching section.
 
-## Files
-- `index.html` — Home
-- `about.html` — About
-- `homelab.html` — Homelab template
-- `projects.html` — Projects template
-- `labs.html` — Labs template
-- `resume.html` — Resume template
-- `contact.html` — Contact
-- `404.html` — Custom 404 for GitHub Pages
-- `assets/css/style.css` — Styles (edit freely)
-
-## Deploy
-1. Create a repo named `<username>.github.io` (public).
-2. Upload these files to the repo root (keep `index.html` at the root).
-3. In **Settings → Pages**, ensure the source is your default branch (e.g., `main`).  
-4. Visit `https://<username>.github.io/`.
-
-Tip: Edit locally, commit, and push to update the site.
+Edit `index.html`, commit, and push to `main` to update the live site.

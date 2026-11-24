@@ -3,40 +3,235 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home • stfn.lol</title>
-  <meta name="description" content="Static template for GitHub Pages." />
+  <meta name="color-scheme" content="dark light" />
+  <title>Stephen Esterle — IT &amp; Cybersecurity</title>
+  <meta name="description" content="Stephen Esterle — IT and cybersecurity technician in the Milwaukee area. CompTIA A+, Google Cybersecurity, Proxmox homelab with Wazuh SIEM." />
+  <meta property="og:title" content="Stephen Esterle — IT &amp; Cybersecurity" />
+  <meta property="og:description" content="IT field tech, desktop support and SOC-focused. Homelab, certifications and experience." />
+  <meta property="og:type" content="website" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <header class="site-header">
     <nav class="container nav">
-      <a class="brand" href="index.html">stfn.lol</a>
+      <a class="brand" href="#top">stephen<span>@</span>esterle:~$</a>
       <ul class="nav-links">
-        <li><a href="about.html">About</a></li>
-        <li><a href="homelab.html">Homelab</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="labs.html">Labs</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#certs">Certs</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#homelab">Homelab</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <main class="container">
 
-<section class="hero">
-  <h1>Welcome</h1>
-  <p class="muted">This is a simple, multi‑page template for GitHub Pages. Replace placeholders with your content.</p>
-  <div class="grid two">
-    <a class="card link" href="homelab.html"><h3>Homelab</h3><p>Template page for network, services, notes.</p></a>
-    <a class="card link" href="projects.html"><h3>Projects</h3><p>Template cards for builds and write‑ups.</p></a>
-  </div>
-</section>
+  <main class="container" id="top">
+
+    <section class="hero">
+      <p class="prompt reveal">$ whoami</p>
+      <h1 class="reveal d1">Stephen Esterle</h1>
+      <p class="lead reveal d2">
+        <strong>IT &amp; cybersecurity technician</strong> in the Milwaukee area. I fix hardware, support users,
+        and run my own security-monitored homelab. Looking for <strong>IT field technician</strong>,
+        <strong>desktop support</strong>, and <strong>SOC analyst</strong> roles.
+      </p>
+      <div class="cta reveal d3">
+        <a class="btn primary" href="mailto:stephencareer@icloud.com">Email me</a>
+        <a class="btn" href="#homelab">See my homelab</a>
+        <a class="btn" href="https://github.com/st3fn1" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <div class="chips reveal d3">
+        <span class="chip ok">CompTIA A+</span>
+        <span class="chip ok">Google Cybersecurity</span>
+        <span class="chip ok">WCTC · IT–Cybersecurity, Dec 2026</span>
+        <span class="chip ok">Milwaukee / Menomonee Falls, WI</span>
+      </div>
+    </section>
+
+    <section class="block" id="about">
+      <div class="section-head"><span class="idx">01</span><h2>About</h2></div>
+      <div class="grid two">
+        <div>
+          <p>I'm finishing my <strong>IT – Cybersecurity Specialist</strong> degree at Waukesha County Technical College
+          (Honor Roll every term, graduating December 2026). Before that I spent a year on a school district
+          help desk, and this summer I interned in IT and security at Milwaukee Public Schools.</p>
+          <p>Outside of class I build things: a Proxmox server running a SIEM, monitoring, and DNS filtering for my whole
+          network. I like hands-on work, figuring out why something broke, and leaving it better than I found it.</p>
+        </div>
+        <div class="card">
+          <div class="meta">// quick facts</div>
+          <p><strong style="color:var(--fg)">Focus:</strong> endpoint support, network basics, security monitoring</p>
+          <p><strong style="color:var(--fg)">Tools I've used on the job:</strong> SentinelOne, Nessus, Wazuh, Lansweeper, Cherwell</p>
+          <p><strong style="color:var(--fg)">Strengths:</strong> problem solving, quick thinking, customer service</p>
+          <p><strong style="color:var(--fg)">Based in:</strong> Menomonee Falls, WI (open to Madison)</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="certs">
+      <div class="section-head"><span class="idx">02</span><h2>Certifications</h2></div>
+      <div class="grid two certs">
+        <div class="card cert">
+          <div class="badge">A+</div>
+          <div>
+            <h3>CompTIA A+</h3>
+            <div class="meta">CompTIA · June 2026</div>
+            <p>Hardware, operating systems, networking, troubleshooting, and operational security.</p>
+          </div>
+        </div>
+        <div class="card cert">
+          <div class="badge">G</div>
+          <div>
+            <h3>Google Cybersecurity Professional Certificate</h3>
+            <div class="meta">Google · May 2023</div>
+            <p>SIEM tools, Linux, SQL, Python, network security, and incident response basics.</p>
+          </div>
+        </div>
+        <div class="card cert pending">
+          <div class="badge">S+</div>
+          <div>
+            <h3>CompTIA Security+</h3>
+            <div class="meta">In progress</div>
+            <p>Next up, building on A+.</p>
+          </div>
+        </div>
+        <div class="card cert pending">
+          <div class="badge">FT</div>
+          <div>
+            <h3>Fortinet FCF / FCA</h3>
+            <div class="meta">In progress</div>
+            <p>Threat landscape fundamentals and FortiGate firewall operation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="experience">
+      <div class="section-head"><span class="idx">03</span><h2>Experience</h2></div>
+      <ul class="timeline">
+        <li>
+          <h3>IT / Cybersecurity Intern — Milwaukee Public Schools</h3>
+          <div class="when">Jun 2026 – Jul 2026 · On-site</div>
+          <ul>
+            <li>Worked hands-on with SentinelOne (EDR), Nessus vulnerability scans, and the Wazuh SIEM.</li>
+            <li>Tracked hardware with Lansweeper and Cherwell: logged laptops, iPads and accessories shipped to and from remote staff, checked serial numbers and asset tags, and got recipient sign-off.</li>
+          </ul>
+        </li>
+        <li>
+          <h3>Help Desk Technician — Menomonee Falls School District</h3>
+          <div class="when">Sep 2021 – Jun 2022</div>
+          <ul>
+            <li>First-level support for students, teachers and staff: computers, printers, projectors and classroom tech.</li>
+            <li>Diagnosed and resolved tickets in person, often under time pressure in live classrooms.</li>
+          </ul>
+        </li>
+        <li>
+          <h3>Delivery &amp; field roles — FedEx (HFL Trucks), Amazon, Uber, DoorDash</h3>
+          <div class="when">2021 – 2026</div>
+          <ul>
+            <li>Ran independent daily routes delivering 150–200 packages a day, managing my own time and customers.</li>
+            <li>Built the reliability and self-direction that carry over to field tech work.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="block" id="homelab">
+      <div class="section-head"><span class="idx">04</span><h2>Homelab</h2></div>
+      <p class="muted">A Proxmox server I built from scratch on a Lenovo ThinkCentre M720q (i5-8400T, 32&nbsp;GB RAM).
+      Services run as LXC containers and VMs, and the whole thing is monitored and reachable securely from anywhere.</p>
+
+      <div class="terminal">
+        <div class="bar"><i></i><i></i><i></i></div>
+<pre><span class="g">root@pve</span>:<span class="b">~</span># pct list
+<span class="d">STATUS   NAME            ROLE</span>
+running  wazuh           SIEM · agents, CVE triage
+running  technitium-dns  DNS · network-wide ad &amp; tracker blocking
+running  grafana         dashboards · InfluxDB + Flux
+running  uptime-kuma     service uptime alerts
+running  docker-vm       Ubuntu Server · NetAlertX device discovery
+running  tailscale       zero-trust remote access · exit node</pre>
+      </div>
+
+      <div class="grid three">
+        <article class="card">
+          <h3>Security monitoring</h3>
+          <p>Deployed <strong>Wazuh</strong> on low-spec hardware, rolled out agents to my machines, and triage the CVEs it flags.</p>
+          <div class="tags"><span class="tag">Wazuh</span><span class="tag">SIEM</span><span class="tag">CVE</span></div>
+        </article>
+        <article class="card">
+          <h3>DNS filtering</h3>
+          <p><strong>Technitium DNS</strong> blocks ads and trackers for the whole network using HaGeZi and OISD lists, plus a
+          <a href="https://github.com/st3fn1/soundcloud-blocklist" target="_blank" rel="noopener">custom blocklist I maintain on GitHub</a>.</p>
+          <div class="tags"><span class="tag">DNS</span><span class="tag">Blocklists</span></div>
+        </article>
+        <article class="card">
+          <h3>Observability</h3>
+          <p><strong>Grafana + InfluxDB</strong> with Flux queries chart CPU, memory and storage across the Proxmox node. <strong>Uptime Kuma</strong> alerts me when a service goes down.</p>
+          <div class="tags"><span class="tag">Grafana</span><span class="tag">InfluxDB</span><span class="tag">Uptime Kuma</span></div>
+        </article>
+        <article class="card">
+          <h3>Remote access</h3>
+          <p><strong>Tailscale</strong> mesh VPN with the Proxmox host as an exit node. I troubleshot and fixed DNS routing failures through the exit node.</p>
+          <div class="tags"><span class="tag">Tailscale</span><span class="tag">WireGuard</span></div>
+        </article>
+        <article class="card">
+          <h3>Troubleshooting story</h3>
+          <p>Running NetAlertX in Docker inside an LXC failed on missing capabilities, so I moved it to a dedicated Ubuntu Server VM, where it works reliably.</p>
+          <div class="tags"><span class="tag">Docker</span><span class="tag">LXC vs VM</span></div>
+        </article>
+        <article class="card">
+          <h3>Hardware</h3>
+          <p>Upgraded the node to 32&nbsp;GB after a BIOS update, and diagnosed a mixed-vendor DDR4 pair that wouldn't POST together.</p>
+          <div class="tags"><span class="tag">Proxmox VE</span><span class="tag">Hardware</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="block" id="skills">
+      <div class="section-head"><span class="idx">05</span><h2>Skills</h2></div>
+      <div class="grid three">
+        <div class="card skill-group">
+          <h3>// support &amp; hardware</h3>
+          <div class="tags">
+            <span class="tag">Windows</span><span class="tag">macOS</span><span class="tag">iOS / iPadOS</span>
+            <span class="tag">PC builds &amp; repair</span><span class="tag">Printers</span><span class="tag">AV / classroom tech</span>
+            <span class="tag">Asset tracking</span><span class="tag">Ticketing</span>
+          </div>
+        </div>
+        <div class="card skill-group">
+          <h3>// security</h3>
+          <div class="tags">
+            <span class="tag">SentinelOne</span><span class="tag">Nessus</span><span class="tag">Wazuh</span>
+            <span class="tag">Vulnerability triage</span><span class="tag">DNS filtering</span><span class="tag">EDR</span>
+          </div>
+        </div>
+        <div class="card skill-group">
+          <h3>// infrastructure</h3>
+          <div class="tags">
+            <span class="tag">Proxmox</span><span class="tag">Linux</span><span class="tag">Ubuntu Server</span>
+            <span class="tag">Docker</span><span class="tag">LXC</span><span class="tag">Tailscale</span>
+            <span class="tag">Grafana</span><span class="tag">Lansweeper</span><span class="tag">Cherwell</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block contact" id="contact">
+      <p class="prompt">$ ./contact.sh</p>
+      <h2>Let's talk.</h2>
+      <p class="muted">Open to IT field tech, desktop support and SOC roles in the Milwaukee and Madison areas.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:stephencareer@icloud.com">stephencareer@icloud.com</a>
+        <a class="btn" href="https://github.com/st3fn1" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
 
   </main>
+
   <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 • Static template • GitHub Pages ready</p>
-    </div>
+    <div class="container"><p>© 2026 Stephen Esterle · hosted on GitHub Pages</p></div>
   </footer>
 </body>
 </html>
