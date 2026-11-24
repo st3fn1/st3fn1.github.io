@@ -1,5 +1,14 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Page not found · st3fn1</title><link rel="stylesheet" href="/mysite/style.css"></head>
+<title>Page not found · st3fn1</title>
+<script>
+  // Works whether the site is served from / or /mysite/
+  var base = location.pathname.indexOf('/mysite/') === 0 ? '/mysite/' : '/';
+  document.write('<link rel="stylesheet" href="' + base + 'style.css">');
+</script>
+</head>
 <body><main class="wrap hero"><p class="eyebrow mono">// 404</p><h1>Page not found.</h1>
-<p class="lead">That page doesn't exist. Try the homepage instead.</p><div class="cta"><a class="btn primary" href="/mysite/">Back home</a></div></main></body></html>
+<p class="lead">That page doesn't exist. Try the homepage instead.</p>
+<div class="cta"><a class="btn primary" id="home" href="/">Back home</a></div></main>
+<script>document.getElementById('home').href = base;</script>
+</body></html>
